@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8"><title>Top Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Restaurant</title>
+</head>
+<body>
+    {% include 'includes/header.html' %}
+
+    <main class="cards">
+        {% for restaurant in restaurants %}
+            <!-- <section class="card">
+                <h2 class="card-padding">{{ restaurant.name }}</h2>
+                <img class="card-img" src="{{ restaurant.image_url }}">
+                <h4 class="card-padding">{{ restaurant.display_address }}</h4>
+                <p class="card-padding">Price: <b>{{ restaurant.price }}</b></p>
+                <p class="card-padding">Rating: <b>{{ restaurant.rating }}</b></p>
+                <p class="card-padding"># of Reviews: <b>{{ restaurant.review_count }}</b></p>
+            </section> -->
+            {% include 'includes/card.html' %}
+        {% endfor %}
+    </main>
+</body>
+</html>
+
