@@ -40,7 +40,7 @@ main {
 .card {
     box-sizing: border-box;
     border: solid 1px #CCC; 
-    width: 20vw;
+    width: 25vw;
     margin: 10px;
 }
 
@@ -63,9 +63,9 @@ main {
     margin: 10px;
 }
 
-.cards {
+/* .cards {
     display: grid;
     grid-template-columns: 22% 22% 22% 22%;
     justify-content: space-around;
-}
+} */
 

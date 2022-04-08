@@ -10,18 +10,19 @@
 <body>
     {% include 'includes/header.html' %}
 
-    <main class="cards">
-        {% for restaurant in restaurants %}
-            <!-- <section class="card">
-                <h2 class="card-padding">{{ restaurant.name }}</h2>
-                <img class="card-img" src="{{ restaurant.image_url }}">
-                <h4 class="card-padding">{{ restaurant.display_address }}</h4>
-                <p class="card-padding">Price: <b>{{ restaurant.price }}</b></p>
-                <p class="card-padding">Rating: <b>{{ restaurant.rating }}</b></p>
-                <p class="card-padding"># of Reviews: <b>{{ restaurant.review_count }}</b></p>
-            </section> -->
-            {% include 'includes/card.html' %}
-        {% endfor %}
+    <main>
+        <section class="card">
+            <h2 class="card-padding">{{ restaurant.name }}</h2>
+            <img class="card-img" src="{{ restaurant.image_url }}">
+            <h4 class="card-padding">{{ restaurant.display_address }}</h4>
+            <p class="card-padding">Price: <b>{{ restaurant.price }}</b></p>
+            <p class="card-padding">Rating: <b>{{ restaurant.rating }}</b></p>
+            <p class="card-padding"># of Reviews: <b>{{ restaurant.review_count }}</b></p>
+        </section> 
+        <!-- {% for restaurant in restaurants %} -->
+            
+            <!-- {% include 'includes/card.html' %} -->
+        <!-- {% endfor %} -->
     </main>
 </body>
 </html>
